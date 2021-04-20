@@ -1,0 +1,9 @@
+<ion-header>
+    <app-header (chatClickEvent)="goToChat()"
+                (homeClickEvent)="goToHome()"
+                (profileClickEvent)="goToProfile()"
+    ></app-header>
+</ion-header>
+<ion-content [scrollX]="false" [scrollY]="false">
+    <app-tinder-ui [cards]="cards"></app-tinder-ui>
+</ion-content>
